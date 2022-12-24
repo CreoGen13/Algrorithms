@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "DynamicArray/DynamicArray.h"
+#include "DynamicArray.h"
 
 using namespace std;
 
