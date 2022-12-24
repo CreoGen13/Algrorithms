@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lab3.exe"
+			"path" : "main.exe"
 		},
 		{
-			"path" : "Lab3.pdb"
+			"path" : "main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "Lab3::@6890427a1f51a3e7e1df",
+	"id" : "main::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lab3",
-	"nameOnDisk" : "Lab3.exe",
+	"name" : "main",
+	"nameOnDisk" : "main.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,6 +91,13 @@
 			[
 				0
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
 		}
 	],
 	"sources" : 
@@ -100,6 +107,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Sort.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
