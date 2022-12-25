@@ -35,7 +35,7 @@ TEST(TestString, TestInsert) {
     EXPECT_EQ(arr[29], std::string("abob"));
     EXPECT_EQ(arr[30], std::string("a"));
     EXPECT_EQ(arr[31], std::string("abo"));
-    EXPECT_EQ(arr[32], std::string("ab"));
+    EXPECT_NE(arr[32], std::string("ab"));
 }
 
 TEST(TestString, TestInsert2) {
