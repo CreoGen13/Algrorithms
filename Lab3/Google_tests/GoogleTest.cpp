@@ -16,7 +16,7 @@ TEST(BasicTest, ChoosePivotTest) {
     int a1[5] = {1, 2, 3, 4, 5};
     int p1 = sort.choosePivot(a1, a1 + 2, a1 + 4, [](int a, int b) { return a < b; });
     EXPECT_EQ(p1, 3);
-    for (int i = 0; i < 5; i++)
+    for# (int i = 0; i < 5; i++)
         EXPECT_EQ(a1[i], sample[i]);
     int a2[5] = {3, 2, 1, 4, 5};
     int p2 = sort.choosePivot(a2, a2 + 2, a2 + 4, [](int a, int b) { return a < b; });

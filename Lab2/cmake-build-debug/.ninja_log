@@ -1,3 +1,27 @@
 # ninja log v5
 3	281	6935135021046858	CMakeFiles/Lab2.dir/main.cpp.obj	519256d7040e3df1
+6913	8565	6936665884590208	lib/libgtest.a	1724d09bb85a83a4
 282	411	6935135022323076	Lab2.exe	cc51345daeecbc99
+8	1358	6936665812517900	Google_Tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	4fe24e9a7a76defa
+5	1317	6936666757123465	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+4	6912	6936665867975519	Google_Tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	5a00d14490fbdd8c
+8565	8610	6936665885064833	lib/libgtest_main.a	d6b83f78360b21cc
+3	45	6936667309365805	DynamicArray/CMakeFiles/DynamicArray.dir/DynamicArray.cpp.obj	923e1718d495f2cd
+45	92	6936667309836231	DynamicArray/libDynamicArray.a	bcb6ad496c2348b5
+92	2168	6936667330530870	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5
+1	298	6936669084388484	CMakeFiles/main.dir/main.cpp.obj	3e19c191eca28ab1
+299	374	6936669085119146	main.exe	b53eb173ba784b18
+3	306	6936669629078388	CMakeFiles/main.dir/main.cpp.obj	3e19c191eca28ab1
+306	380	6936669629784117	main.exe	b53eb173ba784b18
+2	301	6936671011928544	CMakeFiles/main.dir/main.cpp.obj	3e19c191eca28ab1
+301	374	6936671012639189	main.exe	b53eb173ba784b18
+4	1655	6936672106159853	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+1655	3937	6936672129050834	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5
+4	1456	6936672331876343	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+1457	3656	6936672353913612	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5
+4	1336	6936673258518112	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+1337	3645	6936673281565384	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5
+4	1376	6936675191657626	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+1376	3675	6936675214596745	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5
+4	1192	6936676364295845	Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj	85b2628420cfb04e
+1192	3290	6936676385231327	Google_Tests/Google_Tests_run.exe	6e88c3aae8e522c5

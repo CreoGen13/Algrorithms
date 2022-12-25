@@ -41,43 +41,38 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Lab2
+# Object build statements for EXECUTABLE target main
 
 
 #############################################
-# Order-only phony target for Lab2
+# Order-only phony target for main
 
-build cmake_object_order_depends_target_Lab2: phony || CMakeFiles/Lab2.dir
+build cmake_object_order_depends_target_main: phony || cmake_object_order_depends_target_DynamicArray
 
-build CMakeFiles/Lab2.dir/main.cpp.obj: CXX_COMPILER__Lab2_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/main.cpp || cmake_object_order_depends_target_Lab2
-  DEP_FILE = CMakeFiles\Lab2.dir\main.cpp.obj.d
+build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Lab2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
-
-build CMakeFiles/Lab2.dir/DynamicArray.cpp.obj: CXX_COMPILER__Lab2_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray.cpp || cmake_object_order_depends_target_Lab2
-  DEP_FILE = CMakeFiles\Lab2.dir\DynamicArray.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Lab2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Lab2
+# Link build statements for EXECUTABLE target main
 
 
 #############################################
-# Link the executable Lab2.exe
+# Link the executable main.exe
 
-build Lab2.exe: CXX_EXECUTABLE_LINKER__Lab2_Debug CMakeFiles/Lab2.dir/main.cpp.obj CMakeFiles/Lab2.dir/DynamicArray.cpp.obj
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj | DynamicArray/libDynamicArray.a || DynamicArray/libDynamicArray.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Lab2.dir
+  LINK_LIBRARIES = DynamicArray/libDynamicArray.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Lab2.exe
-  TARGET_IMPLIB = libLab2.dll.a
-  TARGET_PDB = Lab2.exe.dbg
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
 
 
 #############################################
@@ -102,10 +97,620 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target DynamicArray
+
+
+#############################################
+# Order-only phony target for DynamicArray
+
+build cmake_object_order_depends_target_DynamicArray: phony || DynamicArray/CMakeFiles/DynamicArray.dir
+
+build DynamicArray/CMakeFiles/DynamicArray.dir/DynamicArray.cpp.obj: CXX_COMPILER__DynamicArray_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray/DynamicArray.cpp || cmake_object_order_depends_target_DynamicArray
+  DEP_FILE = DynamicArray\CMakeFiles\DynamicArray.dir\DynamicArray.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray
+  OBJECT_DIR = DynamicArray\CMakeFiles\DynamicArray.dir
+  OBJECT_FILE_DIR = DynamicArray\CMakeFiles\DynamicArray.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target DynamicArray
+
+
+#############################################
+# Link the static library DynamicArray\libDynamicArray.a
+
+build DynamicArray/libDynamicArray.a: CXX_STATIC_LIBRARY_LINKER__DynamicArray_Debug DynamicArray/CMakeFiles/DynamicArray.dir/DynamicArray.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = DynamicArray\CMakeFiles\DynamicArray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = DynamicArray\libDynamicArray.a
+  TARGET_PDB = DynamicArray.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build DynamicArray/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\DynamicArray && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build DynamicArray/edit_cache: phony DynamicArray/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build DynamicArray/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\DynamicArray && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\creog\Desktop\Algrorithms\Lab2 -BC:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build DynamicArray/rebuild_cache: phony DynamicArray/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build DynamicArray/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build DynamicArray/CMakeFiles/install.util: CUSTOM_COMMAND DynamicArray/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\DynamicArray && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build DynamicArray/install: phony DynamicArray/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build DynamicArray/CMakeFiles/install/local.util: CUSTOM_COMMAND DynamicArray/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\DynamicArray && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build DynamicArray/install/local: phony DynamicArray/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build DynamicArray/CMakeFiles/install/strip.util: CUSTOM_COMMAND DynamicArray/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\DynamicArray && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build DynamicArray/install/strip: phony DynamicArray/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Google_Tests_run
+
+
+#############################################
+# Order-only phony target for Google_Tests_run
+
+build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_DynamicArray cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj: CXX_COMPILER__Google_Tests_run_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/GoogleTest.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_Tests\CMakeFiles\Google_Tests_run.dir\GoogleTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/include -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest
+  OBJECT_DIR = Google_Tests\CMakeFiles\Google_Tests_run.dir
+  OBJECT_FILE_DIR = Google_Tests\CMakeFiles\Google_Tests_run.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Google_Tests_run
+
+
+#############################################
+# Link the executable Google_Tests\Google_Tests_run.exe
+
+build Google_Tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_Tests/CMakeFiles/Google_Tests_run.dir/GoogleTest.cpp.obj | DynamicArray/libDynamicArray.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || DynamicArray/libDynamicArray.a lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = DynamicArray/libDynamicArray.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Google_Tests\CMakeFiles\Google_Tests_run.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Google_Tests\Google_Tests_run.exe
+  TARGET_IMPLIB = Google_Tests\libGoogle_Tests_run.dll.a
+  TARGET_PDB = Google_Tests_run.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Google_Tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Google_Tests/edit_cache: phony Google_Tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Google_Tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\creog\Desktop\Algrorithms\Lab2 -BC:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Google_Tests/rebuild_cache: phony Google_Tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Google_Tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Google_Tests/CMakeFiles/install.util: CUSTOM_COMMAND Google_Tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Google_Tests/install: phony Google_Tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Google_Tests/CMakeFiles/install/local.util: CUSTOM_COMMAND Google_Tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Google_Tests/install/local: phony Google_Tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Google_Tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND Google_Tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Google_Tests/install/strip: phony Google_Tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build Google_Tests/lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Google_Tests/lib/edit_cache: phony Google_Tests/lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Google_Tests/lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\creog\Desktop\Algrorithms\Lab2 -BC:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/rebuild_cache: phony Google_Tests/lib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Google_Tests/lib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Google_Tests/lib/CMakeFiles/install.util: CUSTOM_COMMAND Google_Tests/lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/install: phony Google_Tests/lib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Google_Tests/lib/CMakeFiles/install/local.util: CUSTOM_COMMAND Google_Tests/lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/install/local: phony Google_Tests/lib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Google_Tests/lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND Google_Tests/lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/install/strip: phony Google_Tests/lib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build Google_Tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = Google_Tests\lib\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray -IC:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/include -IC:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/include -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest
+  OBJECT_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\libgmock.a
+
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug Google_Tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock.a
+  TARGET_PDB = gmock.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build Google_Tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = Google_Tests\lib\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/include -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/include -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest
+  OBJECT_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\libgmock_main.a
+
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug Google_Tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Google_Tests\lib\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock_main.a
+  TARGET_PDB = gmock_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Google_Tests/lib/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googlemock && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Google_Tests/lib/googlemock/edit_cache: phony Google_Tests/lib/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Google_Tests/lib/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googlemock && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\creog\Desktop\Algrorithms\Lab2 -BC:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googlemock/rebuild_cache: phony Google_Tests/lib/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Google_Tests/lib/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Google_Tests/lib/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND Google_Tests/lib/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googlemock && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googlemock/install: phony Google_Tests/lib/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Google_Tests/lib/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND Google_Tests/lib/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googlemock && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googlemock/install/local: phony Google_Tests/lib/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Google_Tests/lib/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND Google_Tests/lib/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googlemock && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googlemock/install/strip: phony Google_Tests/lib/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || Google_Tests/lib/googletest/CMakeFiles/gtest.dir
+
+build Google_Tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = Google_Tests\lib\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray -IC:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/include -IC:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest
+  OBJECT_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug Google_Tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build Google_Tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = Google_Tests\lib\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
+  INCLUDES = -IC:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/include -isystem C:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest
+  OBJECT_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug Google_Tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Google_Tests\lib\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Google_Tests/lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googletest && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Google_Tests/lib/googletest/edit_cache: phony Google_Tests/lib/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Google_Tests/lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googletest && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\creog\Desktop\Algrorithms\Lab2 -BC:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googletest/rebuild_cache: phony Google_Tests/lib/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Google_Tests/lib/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Google_Tests/lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND Google_Tests/lib/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googletest && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googletest/install: phony Google_Tests/lib/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Google_Tests/lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND Google_Tests/lib/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googletest && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googletest/install/local: phony Google_Tests/lib/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Google_Tests/lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND Google_Tests/lib/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\creog\Desktop\Algrorithms\Lab2\cmake-build-debug\Google_Tests\lib\googletest && "C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Google_Tests/lib/googletest/install/strip: phony Google_Tests/lib/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
 
-build Lab2: phony Lab2.exe
+build DynamicArray: phony DynamicArray/libDynamicArray.a
+
+build Google_Tests_run: phony Google_Tests/Google_Tests_run.exe
+
+build Google_Tests_run.exe: phony Google_Tests/Google_Tests_run.exe
+
+build gmock: phony lib/libgmock.a
+
+build gmock_main: phony lib/libgmock_main.a
+
+build gtest: phony lib/libgtest.a
+
+build gtest_main: phony lib/libgtest_main.a
+
+build libDynamicArray.a: phony DynamicArray/libDynamicArray.a
+
+build libgmock.a: phony lib/libgmock.a
+
+build libgmock_main.a: phony lib/libgmock_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
+
+build main: phony main.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +720,42 @@ build Lab2: phony Lab2.exe
 #############################################
 # Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug
 
-build all: phony Lab2.exe
+build all: phony main.exe DynamicArray/all Google_Tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/DynamicArray
+
+build DynamicArray/all: phony DynamicArray/libDynamicArray.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/Google_Tests
+
+build Google_Tests/all: phony Google_Tests/Google_Tests_run.exe Google_Tests/lib/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/Google_Tests/lib
+
+build Google_Tests/lib/all: phony Google_Tests/lib/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/Google_Tests/lib/googlemock
+
+build Google_Tests/lib/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a Google_Tests/lib/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/creog/Desktop/Algrorithms/Lab2/cmake-build-debug/Google_Tests/lib/googletest
+
+build Google_Tests/lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -124,14 +764,14 @@ build all: phony Lab2.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3/bin/cmake/win/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/creog/Desktop/Algrorithms/Lab2/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/DynamicArray/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/creog/Desktop/Algrorithms/Lab2/Google_tests/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

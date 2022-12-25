@@ -3,4 +3,12 @@ project(Lab2)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Lab2 main.cpp DynamicArray.h DynamicArray.cpp)
+set(SOURCE_FILES main.cpp)
+add_executable(main ${SOURCE_FILES})
+
+include_directories(DynamicArray)
+add_subdirectory(DynamicArray)
+
+target_link_libraries(main DynamicArray)
+
+add_subdirectory(Google_tests)
