@@ -72,7 +72,8 @@ int DynamicArray<T>::insert(int index, const T &value) {
             std::free(_itemsArray);
             _itemsArray = newItemsArray;
         }
-        new(_itemsArray + _currentSize) T{};
+        new(_itemsArray + _currentSize) T(_itemsArray[_currentSize - 1]);
+        //new(_itemsArray + _currentSize) T{};
         if (_currentSize > index) {
             for (int i = _currentSize; i > index; i--)
                 _itemsArray[i] = std::move(_itemsArray[i - 1]);
