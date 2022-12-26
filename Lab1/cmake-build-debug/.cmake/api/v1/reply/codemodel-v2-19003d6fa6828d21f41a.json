@@ -6,6 +6,10 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
@@ -13,6 +17,21 @@
 					},
 					"projectIndex" : 0,
 					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Game",
+					"jsonFile" : "directory-Game-Debug-3fdc2a9f77bc10ae1a54.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Game",
 					"targetIndexes" : 
 					[
 						0
@@ -23,11 +42,27 @@
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
 						0
 					],
 					"name" : "Lab1",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Game",
+					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +72,16 @@
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 1,
+					"id" : "Game::@971b28586fb25e7ff763",
+					"jsonFile" : "target-Game-Debug-7f1d0c5e9ceff6b1e335.json",
+					"name" : "Game",
+					"projectIndex" : 1
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-ae5906ebccf007c5a8b4.json",
+					"jsonFile" : "target-main-Debug-567ae739a7c4d49baa37.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}

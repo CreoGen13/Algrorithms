@@ -1,3 +1,6 @@
 C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/CMakeFiles/main.dir
 C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/Game/CMakeFiles/Game.dir
+C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/Game/CMakeFiles/edit_cache.dir
+C:/Users/creog/Desktop/Algrorithms/Lab1/cmake-build-debug/Game/CMakeFiles/rebuild_cache.dir
